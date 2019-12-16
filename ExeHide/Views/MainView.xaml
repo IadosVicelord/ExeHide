@@ -1,0 +1,35 @@
+﻿<Window x:Class="ExeHide.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExeHide.Views"
+        mc:Ignorable="d"
+        Title="Lock" Height="150" Width="250" ResizeMode="NoResize">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="Password"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Center"
+                 Grid.Row="0"
+                 FontFamily="Ebrima"
+                 FontSize="16"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="CreatePassword" 
+                    Content="Lock file"
+                    FontFamily="Copperplate Gothic Bold"
+                    Grid.Column="0"/>
+            <Button x:Name="RemovePassword" 
+                    FontFamily="Copperplate Gothic Bold"
+                    Content="Unlock file"
+                    Grid.Column="1"/>
+        </Grid>
+    </Grid>
+</Window>

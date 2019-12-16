@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ExeProtector.Properties
+namespace ExeHide.Properties
 {
 
 
