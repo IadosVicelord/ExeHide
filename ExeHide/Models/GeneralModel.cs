@@ -105,7 +105,7 @@ namespace ExeHide.Models
 
             //Выбор исполняемого файла
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Text files(*.exe) | *.exe";
+            openFileDialog.Filter = "Executable files (*.exe) | *.exe";
             if (openFileDialog.ShowDialog() == true)
             {
                 ExeFile = openFileDialog.FileName;
