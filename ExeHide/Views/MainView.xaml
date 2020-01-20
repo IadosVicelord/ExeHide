@@ -5,26 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExeHide.Views"
         mc:Ignorable="d"
-        Title="Lock" Height="150" Width="250" ResizeMode="NoResize">
+        Title="HideExe" Height="180" Width="250" ResizeMode="NoResize">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="Password"
-                 VerticalContentAlignment="Center"
-                 HorizontalContentAlignment="Center"
-                 Grid.Row="0"
-                 FontFamily="Ebrima"
-                 FontSize="16"
-                 Margin="0 5 0 5"/>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="1.9*"/>
+            </Grid.RowDefinitions>
+            <Label Background="White" FontFamily="Copperplate Gothic Bold">Enter password:</Label>
+            <TextBox Grid.Row="1"
+                     x:Name="Password"
+                     VerticalContentAlignment="Center"
+                     HorizontalContentAlignment="Center"
+                     FontFamily="Ebrima"
+                     FontSize="16"
+                     Margin="0 5 0 5"/>
+        </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Button x:Name="CreatePassword" 
-                    Content="Lock file"
+                    Content="Hide file"
                     FontFamily="Copperplate Gothic Bold"
                     Grid.Column="0"
                     Background="WhiteSmoke"
@@ -33,7 +40,7 @@
 
             <Button x:Name="RemovePassword" 
                     FontFamily="Copperplate Gothic Bold"
-                    Content="Unlock file"
+                    Content="Unhide file"
                     Grid.Column="1"
                     Background="WhiteSmoke"
                     Margin="2.5 5 0 5">
